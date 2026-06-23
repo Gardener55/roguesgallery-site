@@ -114,13 +114,12 @@ h1, h2, h3 { line-height: 1.2; }
 .feature p { color: var(--muted); font-size: 14px; }
 
 /* Screenshots */
-.shots { display: flex; gap: 16px; justify-content: center; margin-top: 40px; flex-wrap: wrap; }
-.shot-ph {
-  width: 200px; height: 420px; border-radius: 24px;
-  background: repeating-linear-gradient(135deg, #221d33, #221d33 12px, #25203a 12px, #25203a 24px);
+.shots { display: flex; gap: 20px; justify-content: center; margin-top: 40px; flex-wrap: wrap; }
+.shot {
+  width: 220px; max-width: 62vw; height: auto;
+  border-radius: 24px;
   border: 1px solid var(--border);
-  display: flex; align-items: center; justify-content: center;
-  color: var(--muted); font-size: 14px;
+  box-shadow: 0 14px 44px rgba(0,0,0,0.5);
 }
 
 /* CTA band */
