@@ -4,6 +4,13 @@ Static marketing site for **The Rogue's Gallery** (iOS), by Underground
 Development. Plain HTML/CSS — no build step. Hosted on Cloudflare Pages with
 Git integration: every push to `main` auto-deploys.
 
+> **Theme:** the site uses a fixed design system — "Lamborghini" (true-black +
+> gold, dramatic uppercase type) + "PlayStation" gallery layout. The single
+> source of truth is [`styles.css`](styles.css) (tokens + components) and
+> [`WEBSITE_THEME.md`](WEBSITE_THEME.md) (the rules). Any change to the site must
+> follow it — link `styles.css`, reuse its classes, and never hardcode
+> colors/fonts in a page. Read `WEBSITE_THEME.md` before editing.
+
 ## Structure
 
 ```
