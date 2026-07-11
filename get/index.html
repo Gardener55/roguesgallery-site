@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get The Rogue's Gallery</title>
+  <meta name="robots" content="noindex" />
+  <script>
+    // Smart store redirect: iOS → App Store, Android → Play Store.
+    // Desktop / unknown devices fall through to the page below.
+    (function () {
+      var IOS = 'https://apps.apple.com/us/app/the-rogues-gallery/id6757679089';
+      var ANDROID = 'https://play.google.com/store/apps/details?id=com.wick387.roguesgallery';
+      var ua = navigator.userAgent || '';
+      var isIOS = /iPhone|iPad|iPod/i.test(ua) ||
+        (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1); // iPadOS reports as Mac
+      var isAndroid = /Android/i.test(ua);
+      if (isIOS) { location.replace(IOS); }
+      else if (isAndroid) { location.replace(ANDROID); }
+    })();
+  </script>
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="icon" type="image/png" href="/assets/favicon.png" />
+  <style>
+    /* Layout composition only — all design values come from styles.css tokens */
+    .get-wrap {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem 1.5rem;
+    }
+    .get-actions { display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; align-items: center; justify-content: center; }
+    .get-actions .store-link { margin-top: 24px; }
+  </style>
+</head>
+<body>
+  <main class="get-wrap">
+    <img class="app-icon" src="/assets/icon.png" alt="The Rogue's Gallery app icon" width="128" height="128" />
+    <h1>The Rogue's Gallery</h1>
+    <p class="tagline">A growing gallery of roguelike and classic card games.</p>
+    <div class="get-actions">
+      <a class="store-link" href="https://apps.apple.com/us/app/the-rogues-gallery/id6757679089" aria-label="Download The Rogue's Gallery on the App Store">
+        <img src="/assets/app-store-badge.svg" alt="Download on the App Store" width="180" height="60" />
+      </a>
+      <a class="store-link" href="https://play.google.com/store/apps/details?id=com.wick387.roguesgallery" aria-label="Get The Rogue's Gallery on Google Play">
+        <img src="/assets/google-play-badge.png" alt="Get it on Google Play" width="176" height="68" />
+      </a>
+    </div>
+    <p class="hero-meta">Free · Plays offline · No account required</p>
+  </main>
+</body>
+</html>
