@@ -125,6 +125,21 @@ h1, h2, .brand, .footer-brand, .nav-cta {
 .store-link img { display: block; height: 60px; width: auto; }
 .store-link:hover { transform: translateY(-2px); filter: brightness(1.08); }
 
+/* Row of store badges (App Store + Google Play), side by side then wrapping */
+.store-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px 20px;
+  margin-top: 30px;
+}
+.store-links .store-link { margin-top: 0; }
+/* Google's official badge ships with ~16% transparent padding baked in, so it is
+   drawn larger and pulled back with a negative margin — that makes the two
+   visible buttons the same height while leaving the asset itself unaltered. */
+.store-link.play img { height: 89px; margin: -15px; }
+
 /* ---------------------------------------------------------------- SECTIONS */
 .section { max-width: 1100px; margin: 0 auto; padding: 84px 24px; }
 .section h2, .cta-band h2 { font-size: clamp(28px, 4vw, 40px); text-align: center; }

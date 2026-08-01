@@ -1,6 +1,6 @@
 # The Rogue's Gallery — Marketing Site
 
-Static marketing site for **The Rogue's Gallery** (iOS), by Underground
+Static marketing site for **The Rogue's Gallery** (iOS & Android), by Underground
 Development. Plain HTML/CSS — no build step. Hosted on Cloudflare Pages with
 Git integration: every push to `main` auto-deploys.
 
@@ -15,10 +15,11 @@ Git integration: every push to `main` auto-deploys.
 
 ```
 index.html      home page (hero, game collection, features, CTA)
+get/index.html  /get smart link — iOS → App Store, Android → Google Play
 privacy.html    privacy policy (required by the App Store)
 support.html    support page (required by the App Store)
 styles.css      all styles
-assets/         app icon, favicon, and game icons
+assets/         app icon, favicon, store badges, and game icons
 ```
 
 ## Local preview
