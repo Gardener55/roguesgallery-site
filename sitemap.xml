@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Every indexable page. /get is a store redirect (noindex) and is left out on purpose.
+     When you add a page, add it here and bump <lastmod>. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://roguesgallery.app/</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://roguesgallery.app/support</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://roguesgallery.app/privacy</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+</urlset>

@@ -6,8 +6,10 @@
   <!-- Mark JS as available so scroll-reveal can hide-then-animate; without JS,
        .reveal styles never apply and all content stays visible. -->
   <script>document.documentElement.classList.add('js');</script>
-  <title>The Rogue's Gallery — A growing gallery of card games for iOS &amp; Android</title>
-  <meta name="description" content="The Rogue's Gallery is a collection of single-player card games for iPhone, iPad, and Android — roguelike dungeon runs and polished classics, with daily challenges, achievements, and leaderboards. Free, plays offline." />
+  <title>The Rogue's Gallery — Roguelike &amp; Solitaire Card Games</title>
+  <meta name="description" content="Twelve card games for iPhone, iPad and Android: roguelike dungeon runs like Scoundrel and classic solitaire like FreeCell. Free, plays offline." />
+  <!-- iOS Safari Smart App Banner: offers "Open"/"Get" for the App Store app -->
+  <meta name="apple-itunes-app" content="app-id=6757679089" />
   <!-- Favicon = the app icon, at the sizes browsers pick from for tabs and bookmarks -->
   <link rel="icon" href="assets/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
@@ -18,11 +20,51 @@
   <link rel="stylesheet" href="styles.css" />
 
   <!-- Open Graph / social sharing -->
+  <meta property="og:site_name" content="The Rogue's Gallery" />
   <meta property="og:title" content="The Rogue's Gallery" />
   <meta property="og:description" content="A growing gallery of roguelike and classic card games for iOS and Android. Free, plays offline." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://roguesgallery.app/" />
   <meta property="og:image" content="https://roguesgallery.app/assets/icon.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta property="og:image:alt" content="The Rogue's Gallery app icon" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@RoguesGallery__" />
+
+  <!-- Structured data: tells search engines this site is a free mobile game and who makes it -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MobileApplication",
+        "@id": "https://roguesgallery.app/#app",
+        "name": "The Rogue's Gallery",
+        "description": "Twelve single-player card games in one app: roguelike dungeon runs like Scoundrel and Regicide, and classic solitaire like Klondike and FreeCell.",
+        "url": "https://roguesgallery.app/",
+        "image": "https://roguesgallery.app/assets/icon.png",
+        "operatingSystem": "iOS, Android",
+        "applicationCategory": "GameApplication",
+        "genre": "Card",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@id": "https://roguesgallery.app/#org" },
+        "sameAs": [
+          "https://apps.apple.com/us/app/the-rogues-gallery/id6757679089",
+          "https://play.google.com/store/apps/details?id=com.wick387.roguesgallery"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://roguesgallery.app/#org",
+        "name": "Underground Development",
+        "url": "https://roguesgallery.app/",
+        "logo": "https://roguesgallery.app/assets/icon.png",
+        "email": "support@roguesgallery.app"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- HERO -->
@@ -60,25 +102,25 @@
       <div class="games-grid">
         <!-- Roguelikes -->
         <article class="game-card reveal" style="--c:#d4af37">
-          <img src="assets/games/scoundrel.png" alt="" class="game-icon" /><div><h3>Scoundrel <span class="tag">Roguelike</span></h3><p class="game-sub">Deck &amp; Dagger</p><p>Fight monsters and survive the dungeon.</p></div>
+          <img src="assets/games/scoundrel.png" alt="" class="game-icon" width="56" height="56" /><div><h3>Scoundrel <span class="tag">Roguelike</span></h3><p class="game-sub">Deck &amp; Dagger</p><p>Fight monsters and survive the dungeon.</p></div>
         </article>
         <article class="game-card reveal" style="--c:#4CAF50">
-          <img src="assets/games/aces-high.png" alt="" class="game-icon" /><div><h3>Aces High <span class="tag">Roguelike</span></h3><p class="game-sub">Card Solitaire</p><p>Get all four Aces to the top.</p></div>
+          <img src="assets/games/aces-high.png" alt="" class="game-icon" width="56" height="56" /><div><h3>Aces High <span class="tag">Roguelike</span></h3><p class="game-sub">Card Solitaire</p><p>Get all four Aces to the top.</p></div>
         </article>
         <article class="game-card reveal" style="--c:#9b59b6">
-          <img src="assets/games/loot-the-loop.png" alt="" class="game-icon" /><div><h3>Loot the Loop <span class="tag">Roguelike</span></h3><p class="game-sub">Temple Raid</p><p>Grab treasures and escape.</p></div>
+          <img src="assets/games/loot-the-loop.png" alt="" class="game-icon" width="56" height="56" /><div><h3>Loot the Loop <span class="tag">Roguelike</span></h3><p class="game-sub">Temple Raid</p><p>Grab treasures and escape.</p></div>
         </article>
         <article class="game-card reveal" style="--c:#e74c3c">
-          <img src="assets/games/regicide.png" alt="" class="game-icon" /><div><h3>Regicide <span class="tag">Roguelike</span></h3><p class="game-sub">Overthrow the Royals</p><p>Defeat Jacks, Queens, and Kings.</p></div>
+          <img src="assets/games/regicide.png" alt="" class="game-icon" width="56" height="56" /><div><h3>Regicide <span class="tag">Roguelike</span></h3><p class="game-sub">Overthrow the Royals</p><p>Defeat Jacks, Queens, and Kings.</p></div>
         </article>
         <article class="game-card reveal" style="--c:#3498db">
-          <img src="assets/games/clear-the-dungeon.png" alt="" class="game-icon" /><div><h3>Clear the Dungeon <span class="tag">Roguelike</span></h3><p class="game-sub">Monster Slayer</p><p>Slay all 12 monsters.</p></div>
+          <img src="assets/games/clear-the-dungeon.png" alt="" class="game-icon" width="56" height="56" /><div><h3>Clear the Dungeon <span class="tag">Roguelike</span></h3><p class="game-sub">Monster Slayer</p><p>Slay all 12 monsters.</p></div>
         </article>
         <article class="game-card reveal" style="--c:#00bcd4">
-          <img src="assets/games/accordion.png" alt="" class="game-icon" /><div><h3>Accordion <span class="tag">Roguelike</span></h3><p class="game-sub">Patience Solitaire</p><p>Compress all 52 cards into a single pile.</p></div>
+          <img src="assets/games/accordion.png" alt="" class="game-icon" width="56" height="56" /><div><h3>Accordion <span class="tag">Roguelike</span></h3><p class="game-sub">Patience Solitaire</p><p>Compress all 52 cards into a single pile.</p></div>
         </article>
         <article class="game-card reveal" style="--c:#e67e22">
-          <img src="assets/games/card-capture.png" alt="" class="game-icon" /><div><h3>Card Capture <span class="tag">Roguelike</span></h3><p class="game-sub">Hunt the Royals</p><p>Build your deck and capture all face cards.</p></div>
+          <img src="assets/games/card-capture.png" alt="" class="game-icon" width="56" height="56" /><div><h3>Card Capture <span class="tag">Roguelike</span></h3><p class="game-sub">Hunt the Royals</p><p>Build your deck and capture all face cards.</p></div>
         </article>
 
         <!-- Classics -->
@@ -92,7 +134,7 @@
           <span class="game-icon emoji">👑</span><div><h3>King's Court <span class="tag classic">Classic</span></h3><p class="game-sub">Build the King's court</p><p>Cover all twelve piles with royalty before you run out of moves.</p></div>
         </article>
         <article class="game-card reveal" style="--c:#f0a500">
-          <img src="assets/games/beehive-solitaire.png" alt="" class="game-icon" /><div><h3>Beehive Solitaire <span class="tag classic">Classic</span></h3><p class="game-sub">The Hive Awaits</p><p>Group all 52 cards into sets of four by rank.</p></div>
+          <img src="assets/games/beehive-solitaire.png" alt="" class="game-icon" width="56" height="56" /><div><h3>Beehive Solitaire <span class="tag classic">Classic</span></h3><p class="game-sub">The Hive Awaits</p><p>Group all 52 cards into sets of four by rank.</p></div>
         </article>
         <article class="game-card reveal" style="--c:#27ae60">
           <span class="game-icon emoji">♠</span><div><h3>Solitaire <span class="tag classic">Classic</span></h3><p class="game-sub">Klondike</p><p>The timeless card-sorting classic — build all four suits from Ace to King.</p></div>
@@ -120,9 +162,9 @@
       <h2 class="reveal">Take a look</h2>
       <p class="section-sub reveal">A peek inside the gallery.</p>
       <div class="shots">
-        <img class="shot reveal" src="assets/screenshots/shot1.png" alt="The Rogue's Gallery gameplay screenshot" loading="lazy" />
-        <img class="shot reveal" src="assets/screenshots/shot2.png" alt="The Rogue's Gallery gameplay screenshot" loading="lazy" />
-        <img class="shot reveal" src="assets/screenshots/shot3.png" alt="The Rogue's Gallery gameplay screenshot" loading="lazy" />
+        <img class="shot reveal" src="assets/screenshots/shot1.png" alt="The Rogue's Gallery gameplay screenshot" width="1242" height="2688" loading="lazy" />
+        <img class="shot reveal" src="assets/screenshots/shot2.png" alt="The Rogue's Gallery gameplay screenshot" width="1242" height="2688" loading="lazy" />
+        <img class="shot reveal" src="assets/screenshots/shot3.png" alt="The Rogue's Gallery gameplay screenshot" width="1242" height="2688" loading="lazy" />
       </div>
     </section>
 
