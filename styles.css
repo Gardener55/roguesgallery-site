@@ -281,6 +281,7 @@ a.brand { text-decoration: none; }
 .doc .rules-head h1 { margin: 2px 0 0; }
 .doc .kicker { color: var(--gold-2); font-size: 13px; font-weight: 600; }
 .doc .lede { font-size: 18px; color: var(--text); }
+.doc .credit { margin-top: 10px; font-size: 14px; color: var(--muted); }
 .doc ul.facts {
   list-style: none; margin: 24px 0 8px;
   display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;
