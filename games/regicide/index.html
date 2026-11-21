@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>document.documentElement.classList.add('js');</script>
+  <title>How to Play Regicide: Solo Card Game Rules &amp; Tips</title>
+  <meta name="description" content="Regicide solo rules explained: defeat 12 royals using suit powers, combos and Jokers. Setup, turn order, card values and tips to win more often." />
+  <link rel="canonical" href="https://roguesgallery.app/games/regicide/" />
+  <meta name="apple-itunes-app" content="app-id=6757679089" />
+  <link rel="icon" href="/assets/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon.png" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css" />
+  <meta property="og:site_name" content="The Rogue's Gallery" />
+  <meta property="og:title" content="How to Play Regicide: Solo Card Game Rules &amp; Tips" />
+  <meta property="og:description" content="Regicide solo rules explained: defeat 12 royals using suit powers, combos and Jokers. Setup, turn order, card values and tips to win more often." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://roguesgallery.app/games/regicide/" />
+  <meta property="og:image" content="https://roguesgallery.app/assets/share-banner.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="The Rogue's Gallery: twelve roguelike and solitaire card games" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@RoguesGallery__" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://roguesgallery.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Game Rules",
+          "item": "https://roguesgallery.app/games/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Regicide",
+          "item": "https://roguesgallery.app/games/regicide/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "How to Play Regicide",
+      "description": "Regicide solo rules explained: defeat 12 royals using suit powers, combos and Jokers. Setup, turn order, card values and tips to win more often.",
+      "url": "https://roguesgallery.app/games/regicide/",
+      "image": "https://roguesgallery.app/assets/share-banner.png",
+      "author": {
+        "@id": "https://roguesgallery.app/#org"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://roguesgallery.app/#org",
+        "name": "Underground Development",
+        "url": "https://roguesgallery.app/"
+      },
+      "about": {
+        "@type": "Game",
+        "name": "Regicide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How many royals do you have to beat in Regicide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Twelve: the four Jacks, four Queens and four Kings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does an exact kill do in Regicide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If your attack brings an enemy to exactly 0 health, that royal joins your deck as a strong card instead of being discarded."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can enemies use their own suit's power?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Enemies are immune to the suit power that matches their own suit, though your card still deals its normal damage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many Jokers do you get in solo Regicide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Two. Each one discards your hand and draws you back up to 8 cards."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header class="site-top">
+    <nav class="nav">
+      <a class="brand" href="/">The Rogue's Gallery</a>
+      <a class="nav-cta" href="/get">Get the app</a>
+    </nav>
+  </header>
+
+  <main>
+  <article class="doc rules">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">&rsaquo;</span> <a href="/games/">Game Rules</a> <span aria-hidden="true">&rsaquo;</span> <span>Regicide</span></nav>
+    <div class="rules-head">
+      <img src="/assets/games/regicide.png" alt="" class="game-icon" width="72" height="72" />
+      <div>
+        <p class="kicker">Roguelike &middot; Overthrow the Royals</p>
+        <h1>How to Play Regicide</h1>
+      </div>
+    </div>
+    <p class="lede">In Regicide you fight your way through the royal court with a standard deck of cards. Twelve Jacks, Queens and Kings stand between you and the throne, each tougher than the last, and every card you play is both an attack and a defense. Regicide was originally published as a cooperative card game by Badgers From Mars. This guide covers the solo rules as played in The Rogue's Gallery.</p>
+    <ul class="facts"><li><b>Players</b>1</li><li><b>Deck</b>52 cards</li><li><b>Hand size</b>8 cards</li><li><b>Goal</b>Defeat all 12 royals</li></ul>
+
+    <h2 id="setup">Setup</h2>
+    <ul>
+<li><strong>The castle:</strong> the 12 face cards are the enemies. You face the Jacks first, then the Queens, then the Kings.</li>
+<li><strong>The tavern deck:</strong> the Aces through 10s of every suit (40 cards) are your cards. Shuffle them and draw a hand of 8.</li>
+<li><strong>Jokers:</strong> you have 2 Jokers to use during the game.</li>
+</ul>
+<table>
+<tr><th>Enemy</th><th>Health</th><th>Attack</th></tr>
+<tr><td>Jack</td><td>20</td><td>10</td></tr>
+<tr><td>Queen</td><td>30</td><td>15</td></tr>
+<tr><td>King</td><td>40</td><td>20</td></tr>
+</table>
+    <h2 id="a-turn">A turn</h2>
+    <ol>
+<li><strong>Play a card</strong> (or a legal combo) from your hand to attack the current enemy.</li>
+<li><strong>Trigger its suit power</strong> (see below).</li>
+<li><strong>Deal damage</strong> equal to the card's value. If the enemy's health reaches 0, it's defeated and the next royal steps up.</li>
+<li><strong>Survive the counterattack.</strong> If the enemy is still standing, it attacks. Discard cards from your hand whose values add up to at least its attack. If you can't, you lose.</li>
+</ol>
+    <h2 id="suit-powers">Suit powers</h2>
+    <table>
+<tr><th>Suit</th><th>Power</th></tr>
+<tr><td>&#9829; Hearts</td><td>Shuffle your discard pile and put that many cards back under the tavern deck.</td></tr>
+<tr><td>&#9830; Diamonds</td><td>Draw that many cards (your hand holds 8 at most).</td></tr>
+<tr><td>&#9827; Clubs</td><td>Deal double damage.</td></tr>
+<tr><td>&#9824; Spades</td><td>Reduce the enemy's attack by that much for the rest of the fight.</td></tr>
+</table>
+<p><strong>Enemies are immune to their own suit.</strong> A Jack of Clubs takes normal damage from clubs, but not double.</p>
+    <h2 id="card-values-combos-and-jokers">Card values, combos and Jokers</h2>
+    <ul>
+<li>Aces count as 1 and 2 to 10 count at face value. A royal you add to your deck is worth 10 (Jack), 15 (Queen) or 20 (King).</li>
+<li><strong>Combos:</strong> play two or more cards of the same rank together if their total is 10 or less (such as 2-2-2-2, 3-3-3 or 5-5). Every suit in the combo triggers its power, using the combo's total value.</li>
+<li><strong>Animal companions:</strong> an Ace can be paired with any one other card.</li>
+<li><strong>Exact kill:</strong> bring an enemy to exactly 0 health and it joins your deck instead of being discarded.</li>
+<li><strong>Jokers:</strong> discard your whole hand and draw back up to 8. You only get two, and using fewer earns a better victory: Gold for none, Silver for one, Bronze for two.</li>
+</ul>
+    <h2 id="strategy-tips">Strategy tips</h2>
+    <ul>
+<li><strong>Plan for the counterattack.</strong> Before attacking, make sure the cards left in your hand can still absorb the enemy's hit.</li>
+<li><strong>Use spades early in a fight.</strong> Their reduction lasts until the enemy falls, so it protects you on every following turn.</li>
+<li><strong>Aim for exact kills.</strong> A royal in your deck is a powerful card later, especially against Kings.</li>
+<li><strong>Watch the enemy's suit.</strong> A clubs attack on a club royal loses its doubling, and hearts against a heart royal won't refill your deck.</li>
+<li><strong>Hold a Joker for a dead hand,</strong> not just a weak one. A Gold victory means never using one.</li>
+</ul>
+    <h2 id="endless-mode">Endless mode</h2>
+    <p>The Rogue's Gallery also has an Endless mode: clear the court and it starts again, with royals that grow stronger every run. See how many runs you can survive.</p>
+
+    <aside class="rules-cta">
+      <h2>Play Regicide free</h2>
+      <p>Regicide is one of twelve card games in The Rogue's Gallery, free for iPhone, iPad and Android. Knave teaches you the rules as you play, and it works offline.</p>
+      <div class="store-links">
+        <a class="store-link" href="https://apps.apple.com/us/app/the-rogues-gallery/id6757679089" aria-label="Download The Rogue's Gallery on the App Store">
+          <img src="/assets/app-store-badge.svg" alt="Download on the App Store" width="180" height="60" />
+        </a>
+        <a class="store-link play" href="https://play.google.com/store/apps/details?id=com.wick387.roguesgallery" aria-label="Get The Rogue's Gallery on Google Play">
+          <img src="/assets/google-play-badge.png" alt="Get it on Google Play" width="646" height="250" />
+        </a>
+      </div>
+    </aside>
+
+    <h2 id="faq">Frequently asked questions</h2>
+    <h3>How many royals do you have to beat in Regicide?</h3>
+    <p>Twelve: the four Jacks, four Queens and four Kings.</p>
+    <h3>What does an exact kill do in Regicide?</h3>
+    <p>If your attack brings an enemy to exactly 0 health, that royal joins your deck as a strong card instead of being discarded.</p>
+    <h3>Can enemies use their own suit&#x27;s power?</h3>
+    <p>Enemies are immune to the suit power that matches their own suit, though your card still deals its normal damage.</p>
+    <h3>How many Jokers do you get in solo Regicide?</h3>
+    <p>Two. Each one discards your hand and draws you back up to 8 cards.</p>
+
+    <h2 id="more-games">More games to learn</h2>
+    <div class="games-grid">
+      <a class="game-card" href="/games/scoundrel/" style="--c:#d4af37"><img src="/assets/games/scoundrel.png" alt="" class="game-icon" width="56" height="56" /><div><h3>Scoundrel <span class="tag">Roguelike</span></h3><p class="game-sub">Deck &amp; Dagger</p><p>Fight monsters and survive the dungeon.</p><span class="rules-link">How to play &rarr;</span></div></a>
+      <a class="game-card" href="/games/card-capture/" style="--c:#e67e22"><img src="/assets/games/card-capture.png" alt="" class="game-icon" width="56" height="56" /><div><h3>Card Capture <span class="tag">Roguelike</span></h3><p class="game-sub">Hunt the Royals</p><p>Build your deck and capture all face cards.</p><span class="rules-link">How to play &rarr;</span></div></a>
+      <a class="game-card" href="/games/clear-the-dungeon/" style="--c:#3498db"><img src="/assets/games/clear-the-dungeon.png" alt="" class="game-icon" width="56" height="56" /><div><h3>Clear the Dungeon <span class="tag">Roguelike</span></h3><p class="game-sub">Monster Slayer</p><p>Slay all 12 monsters.</p><span class="rules-link">How to play &rarr;</span></div></a>
+    </div>
+    <p class="all-rules"><a href="/games/">See the rules for all twelve games &rarr;</a></p>
+  </article>
+  </main>
+
+  <footer>
+    <p class="footer-brand">The Rogue's Gallery</p>
+    <p>Made by Underground Development</p>
+    <nav class="footer-links">
+      <a href="/games/">Game Rules</a>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/support">Support</a>
+      <a href="https://apps.apple.com/us/app/the-rogues-gallery/id6757679089">App Store</a>
+      <a href="https://play.google.com/store/apps/details?id=com.wick387.roguesgallery">Google Play</a>
+    </nav>
+    <p class="copyright">&copy; 2026 Underground Development. iPhone and iPad are trademarks of Apple Inc. Google Play and the Google Play logo are trademarks of Google LLC.</p>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>

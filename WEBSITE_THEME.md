@@ -112,6 +112,9 @@ without a reason — restraint is what keeps it looking professional.
 | `styles.css` | **The design system.** Tokens + components. Single source of truth. |
 | `index.html` | Reference implementation: hero → game gallery → features → screenshots → CTA. |
 | `privacy.html`, `support.html` | Doc pages — use the `.doc` styles. |
+| `games/index.html` | Game Rules hub — every game as a `.game-card` tile linking to its rules page. |
+| `games/<slug>/index.html` | One How to Play page per game (`.doc.rules`): facts strip, rules sections, a `.rules-cta` with store badges, FAQ (mirrored in FAQPage JSON-LD) and three related-game tiles. Rules come from the app's in-game How to Play text and must stay accurate to the app; when a game's rules change in the app, update its page. When a game is added, add a page, a hub tile, a homepage tile link, and a `sitemap.xml` entry. |
+| `assets/share-banner.png` | 1200×630 link-preview image (`og:image`, `summary_large_image`) for the homepage and rules pages. |
 | `WEBSITE_THEME.md` | This spec — the rules. |
 
 Deployed via **Cloudflare Pages** (Git-connected): every push to `main`

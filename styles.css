@@ -202,7 +202,10 @@ h1, h2, .brand, .footer-brand, .nav-cta {
 }
 .game-card h3 { font-size: 18px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .game-sub { color: var(--c, var(--gold)); font-size: 13px; font-weight: 600; margin: 2px 0 6px; }
-.game-card p:last-child { color: var(--muted); font-size: 14px; }
+.game-card p:last-of-type { color: var(--muted); font-size: 14px; }
+/* Tiles that link to a game's rules page */
+a.game-card { text-decoration: none; color: inherit; }
+.game-card .rules-link { display: inline-block; margin-top: 8px; font-size: 13px; font-weight: 600; color: color-mix(in srgb, var(--c, var(--gold)) 70%, white); }
 .tag {
   font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px;
   background: rgba(212, 175, 55, 0.14); color: var(--gold-2);
@@ -262,6 +265,56 @@ footer { border-top: 1px solid var(--border); padding: 48px 24px; text-align: ce
 .doc p, .doc li { color: #d4cfe4; }
 .doc ul { margin: 8px 0 8px 22px; }
 .doc a:not(.back) { color: var(--gold-2); }
+
+/* ------------------------------------------------------------ RULES PAGES
+   /games/ hub + /games/<slug>/ how-to-play pages. Built on .doc; gold is the
+   only accent outside the related-game tiles (WEBSITE_THEME.md rule 5). */
+.site-top { background: var(--bg-2); border-bottom: 1px solid var(--border); }
+a.brand { text-decoration: none; }
+.crumbs { font-size: 13px; color: var(--muted); }
+.crumbs.center { text-align: center; margin-bottom: 18px; }
+.crumbs a, .doc .crumbs a { color: var(--muted); text-decoration: none; transition: color 0.2s var(--ease); }
+.crumbs a:hover, .doc .crumbs a:hover { color: var(--gold); }
+.rules-head { display: flex; gap: 18px; align-items: center; margin: 26px 0 14px; }
+.rules-head .game-icon { width: 72px; height: 72px; border-radius: 16px; }
+.rules-head .game-icon.emoji { font-size: 38px; }
+.doc .rules-head h1 { margin: 2px 0 0; }
+.doc .kicker { color: var(--gold-2); font-size: 13px; font-weight: 600; }
+.doc .lede { font-size: 18px; color: var(--text); }
+.doc ul.facts {
+  list-style: none; margin: 24px 0 8px;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;
+}
+@media (max-width: 640px) { .doc ul.facts { grid-template-columns: repeat(2, 1fr); } }
+.doc .facts li { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius-card); padding: 12px 14px; margin: 0; color: var(--text); }
+.facts b { display: block; font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.doc h3 { font-size: 17px; margin: 22px 0 6px; color: var(--text); }
+.doc ol { margin: 8px 0 8px 22px; }
+.doc li { margin: 4px 0; }
+.doc table { width: 100%; border-collapse: collapse; margin: 12px 0 10px; font-size: 15px; }
+.doc th, .doc td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--border); color: #d4cfe4; }
+.doc th { color: var(--gold-2); font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+.doc .example { background: var(--panel); border: 1px solid var(--border); border-left: 3px solid var(--gold); border-radius: var(--radius-card); padding: 14px 18px; margin: 14px 0; }
+.doc .example p + p, .doc .example ol { margin-top: 8px; }
+.rules-cta {
+  text-align: center; margin: 48px 0 8px; padding: 30px 22px;
+  border: 1px solid var(--border-gold); border-radius: 14px;
+  background: radial-gradient(600px 240px at 50% 0%, var(--gold-glow), transparent 70%), var(--panel);
+}
+.doc .rules-cta h2 { margin-top: 0; }
+.rules-cta .store-links { margin-top: 18px; }
+.doc .games-grid { margin-top: 18px; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); }
+.doc p + p { margin-top: 10px; }
+.doc a.game-card { color: inherit; }
+.doc .game-card h3 { margin: 0; font-size: 18px; }
+.doc .game-sub { color: var(--c, var(--gold)); }
+.doc .all-rules { margin-top: 22px; text-align: center; }
+/* Hub page */
+.page-title { font-size: clamp(32px, 5vw, 48px); text-align: center; }
+.page-title::after { content: ""; display: block; width: 64px; height: 3px; margin: 16px auto 0; background: linear-gradient(90deg, var(--gold), var(--gold-deep)); }
+.section h2.group-title { font-size: clamp(20px, 2.6vw, 26px); text-align: left; margin-top: 56px; }
+.section h2.group-title::after { margin: 12px 0 0; width: 48px; }
+.group-title + .games-grid { margin-top: 22px; }
 
 /* ============================================ AMBIANCE & INTERACTION ======== */
 

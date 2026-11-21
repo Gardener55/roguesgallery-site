@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>document.documentElement.classList.add('js');</script>
+  <title>How to Play FreeCell: Rules, Supermoves &amp; Tips</title>
+  <meta name="description" content="FreeCell solitaire rules in plain English: the layout, legal moves, free cells, how many cards you can move at once, and tips for winning." />
+  <link rel="canonical" href="https://roguesgallery.app/games/freecell/" />
+  <meta name="apple-itunes-app" content="app-id=6757679089" />
+  <link rel="icon" href="/assets/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon.png" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css" />
+  <meta property="og:site_name" content="The Rogue's Gallery" />
+  <meta property="og:title" content="How to Play FreeCell: Rules, Supermoves &amp; Tips" />
+  <meta property="og:description" content="FreeCell solitaire rules in plain English: the layout, legal moves, free cells, how many cards you can move at once, and tips for winning." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://roguesgallery.app/games/freecell/" />
+  <meta property="og:image" content="https://roguesgallery.app/assets/share-banner.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="The Rogue's Gallery: twelve roguelike and solitaire card games" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@RoguesGallery__" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://roguesgallery.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Game Rules",
+          "item": "https://roguesgallery.app/games/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "FreeCell",
+          "item": "https://roguesgallery.app/games/freecell/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "How to Play FreeCell",
+      "description": "FreeCell solitaire rules in plain English: the layout, legal moves, free cells, how many cards you can move at once, and tips for winning.",
+      "url": "https://roguesgallery.app/games/freecell/",
+      "image": "https://roguesgallery.app/assets/share-banner.png",
+      "author": {
+        "@id": "https://roguesgallery.app/#org"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://roguesgallery.app/#org",
+        "name": "Underground Development",
+        "url": "https://roguesgallery.app/"
+      },
+      "about": {
+        "@type": "Game",
+        "name": "FreeCell"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is every FreeCell game winnable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Almost. With 52 cards face up, nearly every deal can be solved; only a tiny number of deals are known to be impossible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many cards can you move at once in FreeCell?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "(empty free cells + 1) multiplied by 2 for each empty column. With 4 empty free cells and no empty columns, that's 5 cards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between FreeCell and Klondike solitaire?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In FreeCell every card is face up and you have four free cells for temporary storage. In Klondike most cards start face down and you draw from a stock pile."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header class="site-top">
+    <nav class="nav">
+      <a class="brand" href="/">The Rogue's Gallery</a>
+      <a class="nav-cta" href="/get">Get the app</a>
+    </nav>
+  </header>
+
+  <main>
+  <article class="doc rules">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">&rsaquo;</span> <a href="/games/">Game Rules</a> <span aria-hidden="true">&rsaquo;</span> <span>FreeCell</span></nav>
+    <div class="rules-head">
+      <span class="game-icon emoji" aria-hidden="true">&#9827;</span>
+      <div>
+        <p class="kicker">Classic &middot; Classic Solitaire</p>
+        <h1>How to Play FreeCell</h1>
+      </div>
+    </div>
+    <p class="lede">FreeCell is the solitaire game where nothing is hidden. Every card is dealt face up, so almost every deal can be won with careful play. Your four free cells are the key: they hold cards temporarily while you untangle the columns.</p>
+    <ul class="facts"><li><b>Players</b>1</li><li><b>Deck</b>52 cards</li><li><b>Layout</b>8 columns, 4 free cells</li><li><b>Goal</b>Build all four suits, Ace to King</li></ul>
+
+    <h2 id="setup">Setup</h2>
+    <ul>
+<li><strong>Tableau:</strong> deal all 52 cards face up into 8 columns: four columns of 7 and four of 6.</li>
+<li><strong>Free cells:</strong> four empty spaces, each holding one card.</li>
+<li><strong>Foundations:</strong> four empty piles, one per suit, built from Ace up to King.</li>
+</ul>
+    <h2 id="legal-moves">Legal moves</h2>
+    <ul>
+<li>Move the bottom card of any column onto another column if it's <strong>one rank lower and the opposite color</strong>, like a red 6 on a black 7.</li>
+<li>Move any single card into an empty free cell, and back out again.</li>
+<li>Move any card, or a properly built sequence, into an empty column.</li>
+<li>Move a card to its foundation when it's next in line for that suit.</li>
+</ul>
+    <h2 id="moving-several-cards-at-once">Moving several cards at once</h2>
+    <p>Strictly, you move one card at a time. But a run of cards can be moved together whenever there's enough free space to have moved them one by one. The most cards you can move at once is:</p>
+<div class="example"><p><strong>(empty free cells + 1) &times; 2<sup>empty columns</sup></strong></p>
+<p>With 2 empty free cells and 1 empty column, you can move (2 + 1) &times; 2 = 6 cards. Moving <em>into</em> an empty column, that column doesn't count.</p></div>
+    <h2 id="how-to-win">How to win</h2>
+    <p>You win when all 52 cards are on the foundations. In The Rogue's Gallery, cards that can safely go up are moved there automatically, and you can take a foundation card back down if you need it.</p>
+    <h2 id="strategy-tips">Strategy tips</h2>
+    <ul>
+<li><strong>Free the Aces and 2s early.</strong> Look for low cards buried deep and plan the moves that dig them out.</li>
+<li><strong>Treat free cells as precious.</strong> Each one you fill halves your ability to move long sequences. Empty them as fast as you fill them.</li>
+<li><strong>An empty column is worth more than a free cell.</strong> It doubles how many cards you can move.</li>
+<li><strong>Think before the first move.</strong> Every card is visible, so scan the whole layout first.</li>
+</ul>
+
+    <aside class="rules-cta">
+      <h2>Play FreeCell free</h2>
+      <p>FreeCell is one of twelve card games in The Rogue's Gallery, free for iPhone, iPad and Android. Knave teaches you the rules as you play, and it works offline.</p>
+      <div class="store-links">
+        <a class="store-link" href="https://apps.apple.com/us/app/the-rogues-gallery/id6757679089" aria-label="Download The Rogue's Gallery on the App Store">
+          <img src="/assets/app-store-badge.svg" alt="Download on the App Store" width="180" height="60" />
+        </a>
+        <a class="store-link play" href="https://play.google.com/store/apps/details?id=com.wick387.roguesgallery" aria-label="Get The Rogue's Gallery on Google Play">
+          <img src="/assets/google-play-badge.png" alt="Get it on Google Play" width="646" height="250" />
+        </a>
+      </div>
+    </aside>
+
+    <h2 id="faq">Frequently asked questions</h2>
+    <h3>Is every FreeCell game winnable?</h3>
+    <p>Almost. With 52 cards face up, nearly every deal can be solved; only a tiny number of deals are known to be impossible.</p>
+    <h3>How many cards can you move at once in FreeCell?</h3>
+    <p>(empty free cells + 1) multiplied by 2 for each empty column. With 4 empty free cells and no empty columns, that&#x27;s 5 cards.</p>
+    <h3>What is the difference between FreeCell and Klondike solitaire?</h3>
+    <p>In FreeCell every card is face up and you have four free cells for temporary storage. In Klondike most cards start face down and you draw from a stock pile.</p>
+
+    <h2 id="more-games">More games to learn</h2>
+    <div class="games-grid">
+      <a class="game-card" href="/games/solitaire/" style="--c:#27ae60"><span class="game-icon emoji" aria-hidden="true">&#9824;</span><div><h3>Solitaire <span class="tag classic">Classic</span></h3><p class="game-sub">Klondike</p><p>The timeless card-sorting classic: build all four suits from Ace to King.</p><span class="rules-link">How to play &rarr;</span></div></a>
+      <a class="game-card" href="/games/beehive-solitaire/" style="--c:#f0a500"><img src="/assets/games/beehive-solitaire.png" alt="" class="game-icon" width="56" height="56" /><div><h3>Beehive Solitaire <span class="tag classic">Classic</span></h3><p class="game-sub">The Hive Awaits</p><p>Group all 52 cards into sets of four by rank.</p><span class="rules-link">How to play &rarr;</span></div></a>
+      <a class="game-card" href="/games/six-seven/" style="--c:#5B8DB8"><span class="game-icon emoji" aria-hidden="true">&#127142;</span><div><h3>6-7 <span class="tag classic">Classic</span></h3><p class="game-sub">French Solitaire</p><p>Build foundations outward from 6 and 7.</p><span class="rules-link">How to play &rarr;</span></div></a>
+    </div>
+    <p class="all-rules"><a href="/games/">See the rules for all twelve games &rarr;</a></p>
+  </article>
+  </main>
+
+  <footer>
+    <p class="footer-brand">The Rogue's Gallery</p>
+    <p>Made by Underground Development</p>
+    <nav class="footer-links">
+      <a href="/games/">Game Rules</a>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/support">Support</a>
+      <a href="https://apps.apple.com/us/app/the-rogues-gallery/id6757679089">App Store</a>
+      <a href="https://play.google.com/store/apps/details?id=com.wick387.roguesgallery">Google Play</a>
+    </nav>
+    <p class="copyright">&copy; 2026 Underground Development. iPhone and iPad are trademarks of Apple Inc. Google Play and the Google Play logo are trademarks of Google LLC.</p>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
